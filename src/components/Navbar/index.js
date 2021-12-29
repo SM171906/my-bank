@@ -8,7 +8,9 @@ import {
   MobileIcon, 
   Navmenu, 
   NavLinks, 
-  NavItem 
+  NavItem, 
+  NavBtn,
+  NavBtnLinks
 } from './navbarElements'
 
 const Navbar = () => {
@@ -28,8 +30,27 @@ const Navbar = () => {
               About
             </NavLinks>
           </NavItem>
-
+          <NavItem>
+            <NavLinks to="discover">
+              Discover
+            </NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="services">
+             Services
+            </NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="signup">
+              Sign Up
+            </NavLinks>
+          </NavItem>
         </Navmenu>
+        <NavBtn>
+          <NavBtnLinks to="/signin">
+             Sign In
+          </NavBtnLinks>
+        </NavBtn>
       </NavbarContainer>
     </Nav>
     </>
